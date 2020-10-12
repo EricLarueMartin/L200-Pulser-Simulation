@@ -1,0 +1,18 @@
+*   BF862 SPICE MODEL MARCH 2007 NXP SEMICONDUCTORS
+*   ENVELOPE    SOT23
+*   JBF862: 1, Drain,  2,Gate,  3,Source
+.SUBCKT BF862 1 2 3
+  Ld  1 4  	1.1n
+  Ls  3 6  	1.25n
+  Lg  2 5  	0.78n
+  Rg  5 7  	0.535
+  Cds  1 3 	0.0001p
+  Cgs  2 3 	1.05p
+  Cgd  1 2 	0.201p
+  Co  4 6 0.35092p
+  J1 4 7 6 JBF862
+.model JBF862 NJF(Beta=47.800E-3 Betatce=-.5 Rd=.8 Rs=7.5000 Lambda=37.300E-3 Vto=-0.57093
++ Vtotc=-2.0000E-3 Is=424.60E-12 Isr=2.995p N=1 Nr=2 Xti=3 Alpha=-1.0000E-3
++ Vk=59.97 Cgd=7.4002E-12 M=0.6015 Pb=0.5 Fc=0.5 Cgs=8.2890E-12 Kf=87.5E-18
++ Af=1)
+.ENDS BF862
